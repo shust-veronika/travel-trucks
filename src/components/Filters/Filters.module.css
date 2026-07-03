@@ -1,0 +1,166 @@
+.sidebar {
+  border-radius: 20px;
+  width: 360px;
+}
+
+.form {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+/* Позиционирование иконки карты внутри инпута */
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 312px;
+}
+
+.iconInput {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  left: 16px; /* Отступ слева внутри инпута */
+  pointer-events: none; /* Чтобы клик проходил сквозь иконку в инпут */
+}
+
+.input {
+  border: none;
+  border-radius: 12px;
+  padding: 0 16px 0 44px; /* 44px слева, чтобы текст не наезжал на карту */
+  background: #fff;
+  width: 100%;
+  height: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  outline: none;
+}
+
+/* Стилизация радио-кнопок */
+.inputLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Расстояние между радио-кружком и текстом */
+}
+
+/* Прячем дефолтный радио-кружок */
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Наш кастомный внешний круг радио-кнопки */
+.customRadio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #475467; /* Серый цвет ободка */
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease;
+}
+
+/* Внутренняя точка при состоянии checked */
+.customRadio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #475467; /* Цвет внутренней точки */
+  transition: transform 0.2s ease;
+}
+
+/* Стили при выборе (checked) */
+.radioInput:checked + .customRadio {
+  border-color: #475467; 
+}
+
+.radioInput:checked + .customRadio::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Остальные общие стили */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c717b;
+  margin: 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+}
+
+.search {
+  width: 312px;
+  height: 56px;
+  border: none;
+  border-radius: 200px;
+  padding: 16px 20px;
+  background: #829b91;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.clear {
+  border: 1px solid #dadde1;
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 312px;
+  height: 56px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #101828;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon {
+   width: 12px;
+   height: 12px;
+}
