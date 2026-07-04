@@ -5,24 +5,12 @@
 }
 
 .container {
-  /* max-width: 1440px;
-  height: 72px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 32px; */
-
-    max-width: 1440px;
+  max-width: 1440px;
   height: 100%;
-gap: 450px;
+  gap: 450px;
   margin: 0 auto;
-
   padding: 0 64px;
-
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -62,7 +50,6 @@ gap: 450px;
   color: #6d7b75;
 }
 
-/* Базовый стиль для неактивной (темной) ссылки */
 .link {
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -70,11 +57,10 @@ gap: 450px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #101828; /* Темный цвет */
+  color: #101828; 
   transition: color 0.2s ease;
 }
 
-/* Стиль для активной (зеленой) ссылки */
 .linkActive {
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -82,10 +68,9 @@ gap: 450px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #829b91; /* Зеленый цвет */
+  color: #829b91; 
 }
 
-/* Ховер эффект для неактивной ссылки */
 .link:hover {
   color: #6c717b;
 }

@@ -1,19 +1,17 @@
-/* Размытый или затемненный фон на весь экран */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.4); /* Белый полупрозрачный фон */
-  backdrop-filter: blur(4px); /* Эффект размытия заднего плана */
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px); 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Чтобы лоадер был поверх всего сайта */
+  z-index: 999; 
 }
 
-/* Белое модальное окно по центру */
 .modal {
   background: #ffffff;
   padding: 40px;
@@ -26,12 +24,11 @@
   width: 380px;
 }
 
-/* Анимация крутящегося спиннера */
 .spinner {
   width: 48px;
   height: 48px;
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #475467; /* Серый цвет вашей темы (как у радиокнопок) */
+  border-top: 4px solid #475467;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 24px;

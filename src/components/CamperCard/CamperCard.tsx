@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaStar, FaMapMarkerAlt, FaGasPump } from 'react-icons/fa';
-import { GiGearStickPattern } from 'react-icons/gi';
-import { MdOutlineAirportShuttle } from 'react-icons/md';
+import { FaStar } from 'react-icons/fa';
 import { Camper } from '@/types/camper';
 import styles from './CamperCard.module.css';
 
@@ -32,7 +30,6 @@ export default function CamperCard({ camper }: CamperCardProps) {
           <span className={styles.price}>€{camper.price}</span>
         </div>
 
-        {/* Рейтинг и локация */}
 <div className={styles.meta}>
   <span className={styles.rating}>
     <FaStar className={styles.starIcon} />
@@ -51,10 +48,6 @@ export default function CamperCard({ camper }: CamperCardProps) {
   </span>
 </div>
 
-        {/* Здесь позже можно вывести описание */}
-        {/* <p className={styles.description}>{camper.description}</p> */}
-
-        {/* Характеристики */}
         <div className={styles.features}>
           <span className={styles.feature}>
             <Image

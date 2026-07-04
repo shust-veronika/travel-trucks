@@ -1,0 +1,413 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 64px 64px;
+  font-family: "Inter", sans-serif;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 638px 650px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ---------------- GALLERY ---------------- */
+
+.galleryWrapper {
+  width: 638px;
+}
+
+.mainImageWindow {
+  width: 638px;
+  height: 492px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f7f7f7;
+}
+
+.mainImageWindow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnailsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.thumbBtn {
+  width: 146px;
+  height: 110px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+}
+
+.thumbBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activeThumb {
+  border-color: #829b91;
+}
+
+/* ---------------- RIGHT ---------------- */
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoCard {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.metaInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.rating {
+  text-decoration: underline;
+  color: #101828;
+}
+
+.location {
+  color: #101828;
+}
+
+.price {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.description {
+  margin: 0;
+  color: #475467;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #475467;
+  font-size: 16px;
+}
+
+/* ---------------- FEATURES ---------------- */
+
+.features {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.featurePich {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f4f7;
+  mix-blend-mode: multiply;
+  border-radius: 100px;
+  padding: 12px 18px;
+  font-size: 16px;
+  color: #101828;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #101828;
+}
+
+.detailsTable {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+}
+
+.detailsTable tr {
+  height: 44px;
+}
+
+
+.detailsTable td:last-child {
+  text-align: right;
+}
+
+/* ---------------- BOTTOM ---------------- */
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 638px 650px;
+  gap: 40px;
+  margin-top: 48px;
+  align-items: start;
+}
+
+/* ---------------- REVIEWS ---------------- */
+
+.reviewsBlock {
+  width: 638px;
+}
+
+.reviewsTitle {
+  margin: 0 0 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.reviewCard {
+  background: #f7f7f7;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.reviewCard:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #829b91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.reviewerName {
+  margin: 0 0 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}
+
+.stars {
+  font-size: 18px;
+  color: #ffc531;
+  line-height: 1;
+}
+
+.reviewText {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #475467;
+}
+
+/* ---------------- BOOKING ---------------- */
+
+.formBlock {
+  width: 650px;
+}
+
+.bookingCard {
+  border: 1px solid #dadde1;
+  border-radius: 24px;
+  padding: 44px;
+  background: #ffffff;
+}
+
+.formTitle {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+}
+
+.formSubtitle {
+  margin: 8px 0 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c717b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  background: #f7f7f7;
+  padding: 18px 337px 18px 18px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  color: #101828;
+}
+
+.field {
+  position: relative;
+}
+
+.errorInput {
+  border: 1px solid #e44848 !important;
+  background: #fff1f1;
+}
+
+.errorLabel {
+  position: absolute;
+  top: -9px;
+  left: 18px;
+
+  padding: 0 6px;
+
+  background: white;
+
+  color: #e44848;
+
+  font-size: 14px;
+}
+
+.errorIcon {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.errorText {
+  margin-top: 6px;
+
+  color: #e44848;
+
+  font-size: 14px;
+}
+
+.input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c717b;
+}
+
+.sendButton {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 200px;
+  background: #829b91;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: .25s;
+}
+
+.sendButton:hover {
+  background: #70877c;
+}
+
+/* ---------------- ICONS ---------------- */
+
+.starIcon,
+.locationIcon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.detailRow {
+  padding-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}
+
+.detailRowConsumption {
+  padding-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}
+
+.detailRowForm {
+  font-weight: 600;
+  font-size: 16px;
+  color: #101828;
+  padding-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+}

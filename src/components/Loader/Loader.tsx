@@ -4,7 +4,6 @@ export default function Loader() {
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>
-        {/* Крутящийся спиннер */}
         <div className={styles.spinner}></div>
         
         <h2 className={styles.title}>Loading tracks...</h2>

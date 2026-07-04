@@ -14,6 +14,10 @@
   margin-left: 460px;
 }
 
+.button:active {
+  border: 1px solid #6d7b75;
+}
+
 .button:disabled {
   opacity: 0.5;
   cursor: not-allowed;

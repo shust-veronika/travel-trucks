@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚐 TravelTrucks
 
-## Getting Started
+TravelTrucks is a web application for browsing and booking camper vans. Users can explore the available campers, apply filters to find the most suitable option, view detailed information about each camper, and submit a booking request.
 
-First, run the development server:
+The project was developed according to the technical requirements using **Next.js**, **TypeScript**, and **TanStack Query**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Main Features
+
+- 🏕️ Browse the camper catalog
+- 🔍 Filter campers by:
+  - location;
+  - vehicle type;
+  - engine type;
+  - transmission type.
+- 📄 View detailed camper information
+- 🖼️ Browse an image gallery
+- ⭐ View camper ratings
+- 💬 Read customer reviews
+- 📨 Submit a booking request
+- 📥 Load additional campers using the **Load More** button
+- ⏳ Display a loader while fetching data from the server
+
+---
+
+## Technologies
+
+This project was built with:
+
+- Next.js
+- React
+- TypeScript
+- TanStack Query
+- CSS Modules
+- React Icons
+
+---
+
+## Project Structure
+
+```text
+src
+│
+├── app/                 # Application pages
+│   ├── catalog/
+│   └── layout.tsx
+│
+├── components/          # React components
+│   ├── BookingForm
+│   ├── CamperCard
+│   ├── CamperList
+│   ├── Filters
+│   ├── Header
+│   ├── Hero
+│   ├── Loader
+│   ├── LoadMoreButton
+│   └── NoCampers
+│
+├── hooks/               # Custom React Hooks
+│
+├── providers/           # TanStack Query Provider
+│
+├── services/            # API requests
+│
+└── types/               # TypeScript types
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application uses the following API:
 
-## Learn More
+https://campers-api.goit.study
 
-To learn more about Next.js, take a look at the following resources:
+Main endpoints:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- GET `/campers`
+- GET `/campers/{id}`
+- GET `/campers/{id}/reviews`
+- POST `/campers/{id}/booking-requests`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Main Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🏠 Home
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The home page contains a hero banner with a brief description of the service and a button that navigates to the camper catalog.
+
+### 🚐 Catalog
+
+On the catalog page, users can:
+
+- browse the list of campers;
+- apply filters;
+- load more campers;
+- navigate to the camper details page.
+
+### 📋 Camper Details
+
+The camper details page includes:
+
+- image gallery;
+- vehicle specifications;
+- rating;
+- description;
+- customer reviews;
+- booking form.
+
+---
+
+## Implementation Details
+
+- Built using the Next.js App Router.
+- API requests are handled with TanStack Query.
+- Pagination is implemented using the **Load More** button.
+- Data is loaded dynamically without page refresh.
+- Booking requests are sent to the server via a POST request.
+- Styling is implemented using CSS Modules.
+
+---
+
+## Author
+
+**Name:** Veronika Shust
+
+**GitHub:** https://github.com/shust-veronika
